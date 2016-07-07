@@ -70,6 +70,12 @@ header {
   padding: 2em 12em;
 }
 
+header h1 {
+  color: #fff;
+  flex: 1;
+}
+
+/*
 header h1,
 header nav {
   color: #fff;
@@ -90,27 +96,47 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
+*/
 
-a[href="buy-now"] {
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px 20px;
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 50px;
+  font-size: 1em;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  text-decoration: none;
 }
 
-/* === NEW CSS FROM CODEPEN DEMO === */
+.nav li a:before {
+  font: 14px fontawesome;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+
+.nav li a:hover {
+  background: #444;
+}
+
+.nav li a.active {
+  box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+  background: #444;
+}
+
 .wrapper {
   display: flex;
   min-height: 100%;
+  background-color: #000;
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   width: 220px;
 }
 
 .content {
   flex: 1;
-  padding: 30px;
   background: #eee;
   box-shadow: 0 0 5px black;
   transform: translate3d(0, 0, 0);
@@ -123,6 +149,8 @@ a[href="buy-now"] {
 
 .button {
   cursor: pointer;
+  position: absolute;
+  margin: 1em 0 0 1em;
 }
 
 .button:before {
