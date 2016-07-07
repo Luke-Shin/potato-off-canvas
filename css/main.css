@@ -1,6 +1,8 @@
 /* ========== Import fonts from Google ========== */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
 
 /* =========== Reset some basic elements ========== */
 
@@ -95,6 +97,40 @@ a[href="buy-now"] {
   padding: 5px 20px;
 }
 
+/* === NEW CSS FROM CODEPEN DEMO === */
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  width: 220px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background: #eee;
+  box-shadow: 0 0 5px black;
+  transform: translate3d(0, 0, 0);
+  transition: transform .3s;
+}
+
+.content.isOpen {
+  transform: translate3d(220px, 0, 0);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:before {
+  content: '\f0c9';
+  font: 42px fontawesome;
+}
+
+
 /* =========== Intro hero ========== */
 
 #intro .hero {
@@ -112,6 +148,3 @@ a[href="buy-now"] {
 #about h1 {
   margin: 2em;
 }
-
-
-
