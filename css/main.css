@@ -150,7 +150,7 @@ nav a {
 .button {
   cursor: pointer;
   position: absolute;
-  margin: 1em 0 0 1em;
+  margin: 2em 0 0 1em;
 }
 
 .button:before {
