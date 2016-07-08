@@ -156,6 +156,11 @@ nav a {
   position: absolute;
   margin: 2em 0 0 1em;
   left: 95%;
+  -webkit-transition: all .1355s linear;
+-moz-transition: all .1355s linear;
+-ms-transition: all .1355s linear;
+-o-transition: all .1355s linear;
+transition: all .1355s linear;
 }
 
 .button:before {
