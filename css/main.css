@@ -147,10 +147,15 @@ nav a {
   transform: translate3d(220px, 0, 0);
 }
 
+.button.isOpen {
+  transform: translate3d(-220px, 0, 0);
+}
+
 .button {
   cursor: pointer;
   position: absolute;
   margin: 2em 0 0 1em;
+  left: 95%;
 }
 
 .button:before {
